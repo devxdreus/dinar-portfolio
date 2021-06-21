@@ -31,13 +31,17 @@
   border-color: var(--secondary-color);
 }
 
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+}
+
 .font-modak {
   font-family: "Modak", cursive !important;
 }
 
-.font-roboto {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.02em;
+.font-yellowtail {
+  font-family: "Yellowtail", cursive;
 }
 
 /* Header Section */
@@ -59,6 +63,13 @@
   letter-spacing: 0.16em;
   color: #333333;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .banner .banner-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
 }
 
 .banner .banner-desc {
@@ -92,4 +103,96 @@
   height: 1000px;
   background-color: var(--primary-color);
   border-radius: 50%;
+}
+
+/* About Section */
+.about {
+  position: relative;
+  background-color: #eee;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20rem;
+}
+
+.about h2 {
+  font-size: 2.25em;
+  letter-spacing: 0.2em;
+}
+
+.about .about-desc {
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+.about .about-img {
+  max-width: 20rem;
+  position: relative;
+}
+
+.about .about-img img {
+  position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: 1;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.about .about-img .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  border: 12px solid #fff;
+  border-radius: 1rem;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+  transform: translate(2rem, 2rem);
+}
+
+.about .wave-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(99%);
+}
+
+.about .wave-1 svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Gallery Section */
+.gallery h2 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  margin: 0 5rem;
+}
+
+.gallery .line-1,
+.gallery .line-2 {
+  margin-top: 1rem;
+}
+
+.gallery .cat-title {
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.gallery .line {
+  display: block;
+  width: 80px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  margin-right: 1.4rem;
+}
+
+.gallery .gallery-carousel .photo {
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
 }
