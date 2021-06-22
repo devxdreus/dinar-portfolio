@@ -202,13 +202,11 @@
 /* ---- grid ---- */
 
 .grid {
-  transition: 0.8s cubic-bezier(0.72, 0.02, 0.32, 1.01)
+  transition: 0.8s cubic-bezier(0.72, 0.02, 0.32, 1.01);
+  overflow: hidden;
+  height: 400px;
 }
 
-.grid.show-25 {
-  height: 100% !important;
-  overflow-y: hidden;
-}
 
 /* clear fix */
 /* .grid:after {

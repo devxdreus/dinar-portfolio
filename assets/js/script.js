@@ -25,7 +25,7 @@ domReady(function () {
         grid.style.height.slice(0, grid.style.height.length - 2)
       );
 
-      grid.style.overflowY = "hidden";
+      // grid.style.overflowY = "hidden";
       grid.style.height = gridOpenLength + "px";
       // console.log(gridBaseHeight);
     });
@@ -43,7 +43,7 @@ domReady(function () {
         // open
         const gridHeight =
           parseInt(grid.style.height.slice(0, grid.style.height.length - 2)) +
-          gridOpenLength;
+          (gridOpenLength * 2);
 
         if (gridHeight < gridBaseHeight) {
           // open more
@@ -60,7 +60,7 @@ domReady(function () {
   }
 
   // masonary variable
-  const gridOpenLength = 400;
+  const gridOpenLength = 500;
 
   // masonary init
   const gridPotrait = document.querySelector(".grid-potrait");
