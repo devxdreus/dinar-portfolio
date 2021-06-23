@@ -214,7 +214,6 @@
   padding: 1rem;
 }
 
-
 /* clear fix */
 /* .grid:after {
   content: "";
@@ -230,7 +229,7 @@
   width: 31.25%;
   margin-bottom: 1rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   /* float: left; */
 }
 
@@ -280,4 +279,19 @@
   cursor: pointer;
   font-size: 1.1em;
   letter-spacing: 0.04em;
+}
+
+.contact {
+  margin-top: 10rem;
+}
+
+.contact .box-wrapper {
+  background: url("../img/geometric.png");
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  width: 60rem;
+  height: 32rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
 }
