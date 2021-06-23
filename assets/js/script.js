@@ -45,7 +45,7 @@ domReady(function () {
         // open
         const gridHeight =
           parseInt(grid.style.height.slice(0, grid.style.height.length - 2)) +
-          (gridOpenLength * 2);
+          gridOpenLength * 2;
 
         if (gridHeight < gridBaseHeight) {
           // open more
@@ -72,4 +72,9 @@ domReady(function () {
   const gridFood = document.querySelector(".grid-food");
   const showFood = document.querySelector(".grid-food .show-btn");
   createMasonary(gridFood, showFood);
+
+  // lightbox
+  lightbox.option({
+    fadeDuration: 400,
+  });
 });
