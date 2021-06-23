@@ -197,7 +197,8 @@
 
 @media (max-width: 540px) {
   .gallery .line {
-    width: 50px;
+    width: 2.5rem;
+    margin-right: 1rem;
   }
 }
 
@@ -241,19 +242,19 @@
 
 @media (max-width: 992px) {
   .grid-item {
-    width: 48.5%;
+    width: 46.5%;
   }
 }
 
 @media (max-width: 768px) {
   .grid-item {
-    width: 48%;
+    width: 45.5%;
   }
 }
 
 @media (max-width: 540px) {
   .grid-item {
-    width: 100%;
+    width: 92%;
   }
 }
 
@@ -281,8 +282,11 @@
   letter-spacing: 0.04em;
 }
 
+/* Contact Section */
 .contact {
   margin-top: 10rem;
+  position: relative;
+  z-index: 1;
 }
 
 .contact .box-wrapper {
@@ -290,8 +294,86 @@
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  width: 60rem;
+  width: 75%;
   height: 32rem;
   border-radius: 1rem;
+  padding: 1rem;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1199px) {
+  .contact .box-wrapper {
+    width: 100%;
+  }
+}
+
+/* Footer Section */
+footer {
+  margin-top: -3rem;
+  background-color: #333;
+  padding-top: 9rem;
+}
+
+.footer-logo {
+  margin-bottom: 1.8rem;
+}
+
+.footer-logo .logo {
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 0.8em;
+}
+
+.footer-logo .desc {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 0.9em;
+  letter-spacing: 0.04em;
+  margin-left: 0.7rem;
+}
+
+@media (max-width: 540px) {
+  .footer-logo .logo {
+    font-size: 3em;
+    line-height: 0.7em;
+  }
+
+  .footer-logo .desc {
+    font-size: 1em;
+    margin-left: 0.5rem;
+  }
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-text a {
+  text-decoration: none;
+}
+
+.footer-text p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.4rem;
+  transition: 0.3s;
+}
+
+.footer-text a p:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-text .footer-heading {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.25rem;
+}
+
+.copyright {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
 }
