@@ -5,7 +5,9 @@ var domReady = function (callback) {
 };
 
 domReady(function () {
+  //-------------------------------------
   // Gallery Section
+  //-------------------------------------
   // init Masonry
   function createMasonary(grid, showBtn) {
     const msnry = new Masonry(grid, {
@@ -62,7 +64,7 @@ domReady(function () {
   // masonary variable
   const gridOpenLength = 500;
 
-  // masonary init
+  // init masonary
   const gridPotrait = document.querySelector(".grid-potrait");
   const showPotrait = document.querySelector(".grid-potrait .show-btn");
   createMasonary(gridPotrait, showPotrait);
